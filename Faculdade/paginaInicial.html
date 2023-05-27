@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaginaInicial</title>
+    <script src="PaginaDescricao.js"></script>
+    <script src="CarrinhoJs.js"></script>
+    <link rel="stylesheet" href="Embelezando.css">
+
+</head>
+
+<body style="background-color: rgb(244, 243, 243);">
+    <div>
+        <img src="Windons/Imagens/Livro.jpg" alt="Imagem não encontrada" width="200" title="livraria">
+        <h1 style="position: absolute; margin-left: 230px; margin-right: 250px; margin-top: -10px; display: inline-block;"
+            class="paragrafo">
+            Aqui, você pode comprar seus livros favoritos!
+        </h1>
+        <div style="float: right;">
+            <a href="Perfil.html">
+                <img src="Windons/Imagens/IconePerfil.png" alt="Imagem não encontrada" width="70" title="Perfil"
+                    class="imagens">
+            </a>
+            <a href="Carrinho.html">
+                <img src="Windons/Imagens/Carrinho.png" alt="Imagem não encontrada" width="70" title="Carrinho"
+                    class="imagens">
+            </a>
+        </div>
+        <br> <br>
+        <p class="paragrafo">
+            Pesquisar os livros mais vendidos:
+        </p>
+        <a href="Exemplares.html">
+            <button class="meu-botao">Exemplares mais vendidos</button>
+        </a> <br>
+        <div>
+            <p class="paragrafo">Pesquisar os livros que você quiser:</p>
+            <input type="text" id="livro-input" class="Input"></input>
+            <button id="btn-pesquisar" class="meu-botao">Pesquisar</button>
+        </div>
+    </div>
+    <script src="paginaInicial.js"></script>
+
+    <div id="mensagem" class="mensagem"></div>
+    <div class="container">
+        <div class="item">
+            <img src="Windons/Imagens/Livro1.png" alt="Imagem não encontrada" width="150" title="livro1"
+                class="imagens">
+            <div class="conteudo">
+                <p class="titulo-livro">
+                    Senhor dos anéis<br>
+                    Preço: 29,99
+                </p>
+                <button onclick="adicionarAoCarrinho('Windons/Imagens/Livro1.png', 'Senhor dos anéis', '29,99')"
+                    class="meu-botao botao-adicionar">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="Windons/Imagens/Livro2.png" alt="Imagem não encontrada" width="150" title="livro2"
+                class="imagens">
+            <div class="conteudo">
+                <p class="titulo-livro">
+                    Harry Potter<br>
+                    Preço: 29,99
+                </p>
+                <button onclick="adicionarAoCarrinho('Windons/Imagens/livro2.png', 'Harry Poter', '29,99')"
+                    class="meu-botao botao-adicionar">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="Windons/Imagens/Livro3.png" alt="Imagem não encontrada" width="150" title="livro3"
+                class="imagens">
+            <div class="conteudo">
+                <p class="titulo-livro">
+                    Penumbra<br>
+                    Preço: 29,99
+                </p>
+                <button onclick="adicionarAoCarrinho('Windons/Imagens/livro3.png', 'Penumbra', '29,99')"
+                    class="meu-botao botao-adicionar">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="Windons/Imagens/Livro4.png" alt="Imagem não encontrada" width="150" title="Livro4"
+                class="imagens">
+            <div class="conteudo">
+                <p class="titulo-livro">
+                    O Poder do Hábito<br>
+                    Preço: 31,50
+                </p>
+                <button onclick="adicionarAoCarrinho('Windons/Imagens/Livro4.png', 'O Poder do Hábito', '31,50')"
+                    class="meu-botao botao-adicionar">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="Windons/Imagens/Livro5.png" alt="Imagem não encontrada" width="150" title="Livro5"
+                class="imagens">
+            <div class="conteudo">
+                <p class="titulo-livro">
+                    O Homem de Giz<br>
+                    Preço: 49,99
+                </p>
+                <button onclick="adicionarAoCarrinho('Windons/Imagens/Livro5.png', 'O Homem de Giz', '49,99')"
+                    class="meu-botao botao-adicionar">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="Windons/Imagens/Livro6.png" alt="Imagem não encontrada" width="150" title="Livro6"
+                class="imagens">
+            <div class="conteudo">
+                <p class="titulo-livro">
+                    É assim que acaba<br>
+                    Preço: 49,99
+                </p>
+                <button onclick="adicionarAoCarrinho('Windons/Imagens/Livro6.png', 'É assim que acaba', '49,99')"
+                    class="meu-botao botao-adicionar">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="Windons/Imagens/Livro7.png" alt="Imagem não encontrada" width="150" title="Livro7"
+                class="imagens">
+            <div class="conteudo">
+                <p class="titulo-livro">
+                    O Hobbit<br>
+                    Preço: 49,99
+                </p>
+                <button onclick="adicionarAoCarrinho('Windons/Imagens/Livro7.png', 'O Hobbit', '49,99')"
+                    class="meu-botao botao-adicionar">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="Windons/Imagens/Livro8.png" alt="Imagem não encontrada" width="150" title="Livro8"
+                class="imagens">
+            <div class="conteudo">
+                <p class="titulo-livro">
+                    Luzes do Norte<br>
+                    Preço: 49,99
+                </p>
+                <button onclick="adicionarAoCarrinho('Windons/Imagens/Livro8.png', 'Luzes do Norte', '49,99')"
+                    class="meu-botao botao-adicionar">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="Windons/Imagens/Livro9.png" alt="Imagem não encontrada" width="150" title="Livro9"
+                class="imagens">
+            <div class="conteudo">
+                <p class="titulo-livro">
+                    1984<br>
+                    Preço: 49,99
+                </p>
+                <button onclick="adicionarAoCarrinho('Windons/Imagens/Livro9.png', '1984', '49,99')"
+                    class="meu-botao botao-adicionar">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="Windons/Imagens/Livro10.png" alt="Imagem não encontrada" width="150" title="Livro10"
+                class="imagens">
+            <div class="conteudo">
+                <p class="titulo-livro">
+                    O Livro da matemática<br>
+                    Preço: 49,99
+                </p>
+                <button onclick="adicionarAoCarrinho('Windons/Imagens/Livro10.png', 'O Livro da matemática', '49,99')"
+                    class="meu-botao botao-adicionar">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil</title>
+  <link rel="stylesheet" type="text/css" href="Embelezando.css">
+</head>
+
+<body style="background-color: rgb(244, 243, 243);">
+  <div style="float: right;">
+
+    <a href="Perfil.html">
+      <img src="Windons/Imagens/IconePerfil.png" alt="Imagem não encontrada" width="70" title="Perfil" class="imagens">
+    </a>
+
+    <a href="Carrinho.html">
+      <img src="Windons/Imagens/Carrinho.png" alt="Imagem não encontrada" width="70" title="Carrinho" class="imagens">
+    </a>
+  </div>
+  <h1 class="paragrafo">Perfil do Usuário</h1> <br> <br> <br>
+
+  <div>
+    <label for="nome" class="paragrafo">Nome:</label>
+    <span id="nome" class="paragrafo"></span>
+  </div>
+  <br>
+  <br>
+  <div>
+    <label for="email" class="paragrafo">E-mail:</label>
+    <span id="email" class="paragrafo"></span>
+    <br>
+    <br>
+
+    <div>
+      <label for="biografia" class="paragrafo">Biografia:</label> <br>
+      <textarea id="biografia" name="biografia" class="perfil-textarea"></textarea> <br>
+      <button id="salvar-biografia" class="meu-botao">Salvar Biografia</button>
+    </div>
+
+    <div>
+      <h3 class="paragrafo">Biografia:</h3> <br> <br>
+      <div id="biografia-container"></div>
+    </div>
+ <br>
+    <h3 class="paragrafo">Último livro adicionado ao carrinho:</h3>
+    <div class="container3">
+      <div id="ultimo-livro" class="item"></div>
+    </div>
+    <script src="perfil.js"></script>
+
+    <a href="paginaInicial.html">
+      <button class="meu-botao" style="margin-left: 650px;">Voltar a pagina inicial</button>
+    </a>
+</body>
+
+</html>
